@@ -41,7 +41,7 @@ print( list )"""
         <i>list</i>.<i>remove(element)</i><br/>
         <br/>
         list = ['a', 'b', 'c', 'd', 'e', 'b']<br/>
-        list.remove(c)<br/>
+        list.remove('c')<br/>
         print( list )<br/>
         >> ['a', 'b', 'd', 'e', 'b']
         """,
