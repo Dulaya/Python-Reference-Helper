@@ -46,7 +46,7 @@ print( list )"""
         >> ['a', 'b', 'd', 'e', 'b']
         """,
         """list = ['a', 'b', 'c', 'd', 'e', 'b']
-list.remove(c)
+list.remove('c')
 print( list )"""
     ],
     
