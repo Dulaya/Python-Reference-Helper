@@ -11,22 +11,11 @@ from app.mapping_data import *
 def index(request):
     return render(request, 'index.html')
 
-def user_input(request):
-    output = {'output': request.POST['name'] } 
-    return JsonResponse(output)
-
 def bot_output(request):
     user_input = request.POST['name']
     user_input.lower() #Convert to lowercase 
 
-    array_key_words = ['array','list','tuple']
-
-    #if user_input in array_key_words : 
     answer = mapping_data[ training(user_input)[0] ][0] #output as array
-        #answer = array()
-
-    #else: answer = "<div>Please provide valid input</div>"
-
 
     output = {
         'input': user_input,
@@ -35,12 +24,6 @@ def bot_output(request):
         }
 
     return JsonResponse(output)
-
-def array():
-    
-    output = "<div>Indexing a list using brackets: <br/> list = ['Fish', 'Donkey', 'Whale', 'Sheep', 'Shark'] <br/> print(list[1]) --> 'Donkey'</div>"
-
-    return output
 
 def training(user_input):
 
