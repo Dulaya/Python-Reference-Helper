@@ -51,19 +51,18 @@ input[type=submit] {
 
 #cover {
     width: 100%;
-    height: 200px;
     text-align: center;
 }
 
 #skulptForm {
-    height: 150px;
+    height: 25vh;
     display: inline-block;
 }
 
 textarea {
     padding: 10px;
     display: block;
-    height: 150px;
+    height: 25vh;
     width: 45vw;
     border: 0px;
     resize: none;
@@ -76,7 +75,7 @@ textarea {
     display: inline-flex;
     margin: 0;
     width: 45vw;
-    height: 150px;
+    height: 25vh;
     vertical-align: top;
     background: black;
     color: white;
