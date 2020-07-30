@@ -15,12 +15,26 @@ def bot_output(request):
     user_input = request.POST['name']
     user_input.lower() #Convert to lowercase 
 
-    answer = mapping_data[ training(user_input)[0] ][0] #output as array
+    #Keywords of common concepts
+    key_words = [
+        'integer','float','string','global','local','random','list','index','slice','length list','append','insert list','remove list','delete list','pop',
+        'join list',
+        ]
+
+    #If input is part of keywords, then simply matches the keyword to the output
+    if user_input in key_words :
+        answer = mapping_data [ user_input ][0] #output as array
+        code = mapping_data [ user_input ][1] #output as array
+
+    #If input is NOT part of keywords, then run training algorithm
+    else: 
+        answer = mapping_data[ training(user_input)[0] ][0] 
+        code = mapping_data[ training(user_input)[0] ][1] 
 
     output = {
         'input': user_input,
         'output': answer,
-        'code': mapping_data[ training(user_input)[0] ][1],
+        'code': code,
         }
 
     return JsonResponse(output)

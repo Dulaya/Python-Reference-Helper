@@ -43,11 +43,18 @@ input[type=submit] {
     border: 0px;
     background: #f08a5d;
     color: #eeecda;
-    padding: 5px;
+    padding: 2.5px 5px;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 2.5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
+
+#suggestButtonsCover {
+    text-align: center;
+}
+
+#suggestButtonsCover > button { margin: 10px 0; }
+
 
 #cover {
     width: 100%;

@@ -24,10 +24,24 @@
     </h1>
 
     <form action="" id="formID" style="text-align: center;">{% csrf_token %}
-        <input type="text" id="name" style="width: 25vw;" placeholder='e.g. remove element list, delete value array...' />
+        <input type="text" id="name" style="width: 25vw;"
+            placeholder='e.g. remove element list, delete value array...' />
         <input type="submit" value="Search" />
     </form><br />
 
+    <div id='suggestButtonsCover'>
+        <button onclick="ajaxSubmit('list')">list</button>
+        <button onclick="ajaxSubmit('index')">index of list</button>
+        <button onclick="ajaxSubmit('slice')">slice list</button>
+        <button onclick="ajaxSubmit('length list')">length of list</button>
+        <button onclick="ajaxSubmit('if in list')">check if element in list</button>
+        <button onclick="ajaxSubmit('append')">append list</button>
+        <button onclick="ajaxSubmit('insert list')">insert list</button>
+        <button onclick="ajaxSubmit('delete list')">delete list</button>
+        <button onclick="ajaxSubmit('pop')">pop list</button>
+        <button onclick="ajaxSubmit('remove list')">remove list</button>
+        <button onclick="ajaxSubmit('join list')">join list</button>
+    </div>
 
     <div id='cover'>
         <form id='skulptForm'>
@@ -50,32 +64,7 @@
 
             if ($('#name').val() !== '') {
 
-                //Bot Output
-                $.ajax({
-                    type: 'POST',
-                    url: '/output/',
-                    data: {
-                        'name': $('#name').val(),
-                        csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val()
-                    },
-                    success: function (output) {
-
-                        temp = "<div class='bubble'>Your input: " + output["input"] + "<br/><br/>";
-                        temp += "Matched result:<br/><br/>" + output["output"] + "<br/><br/>";
-
-                        outputWrite.push(temp)
-
-                        document.getElementById('chatBody').innerHTML = ''; //Clear chatBody
-
-                        document.getElementById('yourcode').value = output["code"]
-
-                        for (bubble of outputWrite) {
-                            document.getElementById('chatBody').innerHTML = bubble
-                        }
-
-                        id++;
-                    }
-                })
+                ajaxSubmit($('#name').val())
 
                 document.getElementById('name').value = ''; //Clear input box
             }
@@ -83,6 +72,39 @@
                 alert('Field cannot be empty')
             }
         })
+
+
+
+        function ajaxSubmit(input) {
+            //var input = $('#name').val();
+
+            //Bot Output
+            $.ajax({
+                type: 'POST',
+                url: '/output/',
+                data: {
+                    'name': input,
+                    csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val()
+                },
+                success: function (output) {
+
+                    temp = "<div class='bubble'>Your input: " + output["input"] + "<br/><br/>";
+                    temp += "Matched result:<br/><br/>" + output["output"] + "<br/><br/>";
+
+                    outputWrite.push(temp)
+
+                    document.getElementById('chatBody').innerHTML = ''; //Clear chatBody
+
+                    document.getElementById('yourcode').value = output["code"]
+
+                    for (bubble of outputWrite) {
+                        document.getElementById('chatBody').innerHTML = bubble
+                    }
+
+                    id++;
+                }
+            })
+        }
 
 
 

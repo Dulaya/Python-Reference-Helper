@@ -2,6 +2,9 @@
 
 training_data = [
 
+###################################################################################################
+#### Data Type Data Type Data Type Data Type Data Type Data Type Data Type Data Type Data Type ####
+###################################################################################################
 {"word": "integer", "key": "integer"},
 {"word": "int", "key": "integer"},
 {"word": "int number", "key": "integer"},
@@ -18,15 +21,23 @@ training_data = [
 {"word": "local variable", "key": "global local variable"},
 {"word": "local", "key": "global local variable"},
 
-{"word": "random", "key": "random number"},
-{"word": "random number", "key": "random number"},
+{"word": "random", "key": "random"},
+{"word": "random number", "key": "random"},
 
-#List
-{"word": "index", "key": "index list"},
-{"word": "index list", "key": "index list"},
+###################################################################################################
+##### List List  List List  List List  List List  List List  List List  List List  List List  #####
+###################################################################################################
+{"word": "list", "key": "list"},
+{"word": "list array", "key": "list"},
 
-{"word": "slice", "key": "slice list"},
-{"word": "slice list", "key": "slice list"},
+{"word": "index", "key": "index"},
+{"word": "index list", "key": "index"},
+{"word": "access list", "key": "index"},
+{"word": "negative index", "key": "index"},
+
+{"word": "slice", "key": "slice "},
+{"word": "slice list", "key": "slice"},
+{"word": "range list", "key": "slice"},
 
 {"word": "length list", "key": "length list"},
 {"word": "len list", "key": "length list"},
@@ -35,33 +46,51 @@ training_data = [
 {"word": "check if in list", "key": "if in list"},
 {"word": "if in list", "key": "if in list"},
 
-{"word": "add element list", "key": "append element list"},
-{"word": "add element array", "key": "append element list"},
-{"word": "add value list", "key": "append element list"},
-{"word": "add value array", "key": "append element list"},
-{"word": "append element list", "key": "append element list"},
-{"word": "append element array", "key": "append element list"},
-{"word": "append value list", "key": "append element list"},
-{"word": "append value array", "key": "append element list"},
+{"word": "add list", "key": "append"},
+{"word": "append list", "key": "append"},
+{"word": "add element list", "key": "append"},
+{"word": "add element array", "key": "append"},
+{"word": "add value list", "key": "append"},
+{"word": "add value array", "key": "append"},
+{"word": "append element list", "key": "append"},
+{"word": "append element array", "key": "append"},
+{"word": "append value list", "key": "append"},
+{"word": "append value array", "key": "append"},
 
-{"word": "delete element list", "key": "delete element list"},
-{"word": "delete element array", "key": "delete element list"},
-{"word": "delete value list", "key": "delete element list"},
-{"word": "delete value array", "key": "delete element list"},
-{"word": "del list", "key": "delete element list"},
+{"word": "insert list", "key": "insert list"},
+{"word": "insert element list", "key": "insert list"},
+{"word": "insert element array", "key": "insert list"},
+{"word": "insert value list", "key": "insert list"},
+{"word": "insert value array", "key": "insert list"},
+{"word": "insert element list", "key": "insert list"},
+{"word": "insert element array", "key": "insert list"},
+{"word": "insert value list", "key": "insert list"},
+{"word": "insert value array", "key": "insert list"},
 
-{"word": "remove element list", "key": "remove element list"},
-{"word": "remove element array", "key": "remove element list"},
-{"word": "remove value list", "key": "remove element list"},
-{"word": "remove value array", "key": "remove element list"},
+{"word": "delete list", "key": "delete list"},
+{"word": "del list", "key": "delete list"},
+{"word": "delete element list", "key": "delete list"},
+{"word": "delete element array", "key": "delete list"},
+{"word": "delete value list", "key": "delete list"},
+{"word": "delete value array", "key": "delete list"},
+{"word": "del list", "key": "delete list"},
 
-{"word": "pop element list", "key": "pop element list"},
-{"word": "pop element array", "key": "pop element list"},
-{"word": "pop value list", "key": "pop element list"},
-{"word": "pop value array", "key": "pop element list"},
+{"word": "remove list", "key": "remove list"},
+{"word": "remove element list", "key": "remove list"},
+{"word": "remove element array", "key": "remove list"},
+{"word": "remove value list", "key": "remove list"},
+{"word": "remove value array", "key": "remove list"},
 
+{"word": "pop list", "key": "pop"},
+{"word": "pop element list", "key": "pop"},
+{"word": "pop element array", "key": "pop"},
+{"word": "pop value list", "key": "pop"},
+{"word": "pop value array", "key": "pop"},
 
+{"word": "clear list", "key": "clear list"},
+{"word": "empty list", "key": "clear list"},
 
+{"word": "join list", "key": "join list"},
 
 
 ]
