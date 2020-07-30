@@ -16,12 +16,12 @@
 
 <body>
 
-    <h1 style="text-align: center; ">
+    <h3 style="text-align: center; ">
         <span id='reference'>Reference</span>
-        <img style='height:40px; vertical-align: top;'
+        <img style='height: 1.5em; vertical-align: top;'
             src='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' alt='python'>
         <span id='helper'>Helper</span>
-    </h1>
+    </h3>
 
     <form action="" id="formID" style="text-align: center;">{% csrf_token %}
         <input type="text" id="name" style="width: 25vw;"
@@ -30,17 +30,8 @@
     </form><br />
 
     <div id='suggestButtonsCover'>
+        <button onclick="ajaxSubmit('data type')">data type</button>
         <button onclick="ajaxSubmit('list')">list</button>
-        <button onclick="ajaxSubmit('index')">index of list</button>
-        <button onclick="ajaxSubmit('slice')">slice list</button>
-        <button onclick="ajaxSubmit('length list')">length of list</button>
-        <button onclick="ajaxSubmit('if in list')">check if element in list</button>
-        <button onclick="ajaxSubmit('append')">append list</button>
-        <button onclick="ajaxSubmit('insert list')">insert list</button>
-        <button onclick="ajaxSubmit('delete list')">delete list</button>
-        <button onclick="ajaxSubmit('pop')">pop list</button>
-        <button onclick="ajaxSubmit('remove list')">remove list</button>
-        <button onclick="ajaxSubmit('join list')">join list</button>
     </div>
 
     <div id='cover'>

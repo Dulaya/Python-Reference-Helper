@@ -17,8 +17,9 @@ def bot_output(request):
 
     #Keywords of common concepts
     key_words = [
-        'integer','float','string','global','local','random','list','index','slice','length list','append','insert list','remove list','delete list','pop',
-        'join list',
+        'data type','integer','float','string','global','local','random',
+        'list','index','slice','length list','append','insert list','remove list','delete list','pop','join list',
+        'dict','dictionary','access dictionary','update dictionary','keys dictionary','values dictionary',
         ]
 
     #If input is part of keywords, then simply matches the keyword to the output

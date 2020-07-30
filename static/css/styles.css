@@ -13,21 +13,21 @@ span {
     color: #FFD240;
     background: #3772A5;
     padding: 0 25px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #helper {
     color: #3772A5;
     background: #FFD240;
     padding: 0 25px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .bubble {
     padding: 25px;
     margin: 10px;
     border-radius: 10px;
-    background: #f7f7f7;
+    background: #f3f3f3;
     color: #3f3f44;
     font-weight: 600;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -41,8 +41,8 @@ input[type=submit] {
 button,
 input[type=submit] {
     border: 0px;
-    background: #f08a5d;
-    color: #eeecda;
+    background: #3772A5;
+    color: #FFD240;
     padding: 2.5px 5px;
     display: inline-block;
     border-radius: 2.5px;
@@ -62,14 +62,14 @@ input[type=submit] {
 }
 
 #skulptForm {
-    height: 25vh;
+    height: 150px;
     display: inline-block;
 }
 
 textarea {
     padding: 10px;
     display: block;
-    height: 25vh;
+    height: 150px;
     width: 45vw;
     border: 0px;
     resize: none;
@@ -78,14 +78,36 @@ textarea {
 }
 
 #output {
+    text-align: left;
     padding: 10px;
     display: inline-flex;
     margin: 0;
     width: 45vw;
-    height: 25vh;
+    height: 150px;
     vertical-align: top;
     background: black;
     color: white;
     overflow-y: auto;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(179, 79, 79, 0.24);
+}
+
+#alternateRow:nth-child(even){
+    background: white;
+    margin: 25px 0;
+    padding: 10px 0;
+}
+
+#typeButton {
+    background: #FFD240;
+    color: #3772A5;
+}
+
+#codeDiv {
+    margin: 10px 0 10px 25px;
+    padding: 10px;
+    background: #ffffdd;
+    color: #3282b8;
+    max-width: 75vw;
+    border-left: 3px solid;
+    border-color: #0f4c75;
 }

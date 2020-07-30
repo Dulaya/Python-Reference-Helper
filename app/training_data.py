@@ -5,6 +5,9 @@ training_data = [
 ###################################################################################################
 #### Data Type Data Type Data Type Data Type Data Type Data Type Data Type Data Type Data Type ####
 ###################################################################################################
+{"word": "data type", "key": "data type"},
+{"word": "data", "key": "data type"},
+
 {"word": "integer", "key": "integer"},
 {"word": "int", "key": "integer"},
 {"word": "int number", "key": "integer"},
@@ -92,6 +95,29 @@ training_data = [
 
 {"word": "join list", "key": "join list"},
 
+###################################################################################################
+##### Dictionary Dictionary Dictionary Dictionary Dictionary Dictionary Dictionary Dictionary #####
+###################################################################################################
+{"word": "dictionary", "key": "dictionary"},
+{"word": "dict", "key": "dictionary"},
+
+{"word": "access dictionary", "key": "access dictionary"},
+{"word": "access dict", "key": "access dictionary"},
+
+{"word": "update dictionary", "key": "update dictionary"},
+{"word": "update dict", "key": "update dictionary"},
+{"word": "change dictionary", "key": "update dictionary"},
+{"word": "change dict", "key": "update dictionary"},
+
+{"word": "keys dictionary", "key": "keys dictionary"},
+{"word": "keys dict", "key": "keys dictionary"},
+{"word": "key dictionary", "key": "key dictionary"},
+{"word": "key dict", "key": "key dictionary"},
+
+{"word": "values dictionary", "key": "values dictionary"},
+{"word": "values dict", "key": "values dictionary"},
+{"word": "value dictionary", "key": "values dictionary"},
+{"word": "value dict", "key": "values dictionary"},
 
 ]
 
